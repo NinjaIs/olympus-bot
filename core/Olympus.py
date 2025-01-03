@@ -59,7 +59,7 @@ class Olympus(commands.AutoShardedBot):
         await self.change_presence(status=discord.Status.do_not_disturb,
                                    activity=discord.Activity(
                                        type=discord.ActivityType.playing,
-                                       name='$help | .gg/odx'))
+                                       name='$help | Ghost Development'))
 
     async def send_raw(self, channel_id: int, content: str,
                        **kwargs) -> typing.Optional[discord.Message]:

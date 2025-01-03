@@ -52,12 +52,10 @@ class Mention(commands.Cog):
                     description=f"Hey {message.author.mention},\nPrefix For This Server is `{prefix}`\nServer ID: {message.guild.id}\n\nType `{prefix}help` for more information."
                 )
                 embed.set_thumbnail(url=self.bot.user.avatar.url)
-                embed.set_footer(text="Powered by Olympus Development™", icon_url=self.bot.user.avatar.url)
+                embed.set_footer(text="Modified By Ghost Development", icon_url=self.bot.user.avatar.url)
 
                 buttons = [
-                    discord.ui.Button(label="Invite", style=discord.ButtonStyle.link, url="https://discord.com/oauth2/authorize?client_id=1144179659735572640&permissions=2113268958&scope=bot"),
-                    discord.ui.Button(label="Web", style=discord.ButtonStyle.link, url="https://olyumpus.vercel.app/"),
-                    discord.ui.Button(label="Support", style=discord.ButtonStyle.link, url="https://discord.com/invite/odx"),
+                    discord.ui.Button(label="Ghost Development", style=discord.ButtonStyle.link, url="https://youtube.com/")
                 ]
 
                 view = discord.ui.View()

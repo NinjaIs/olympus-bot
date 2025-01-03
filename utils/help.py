@@ -64,11 +64,11 @@ class View(discord.ui.View):
             self.add_item(Dropdown(ctx=self.ctx, options=self.options))
 
     def add_buttons(self):
-        self.homeB = Button(label="", style=discord.ButtonStyle.secondary, emoji="⏪", command=self.set_page, args=0, ctx=self.ctx)
-        self.backB = Button(label="", style=discord.ButtonStyle.secondary, emoji="◀️", command=self.to_page, args=-1, ctx=self.ctx)
+        self.homeB = Button(label="", style=discord.ButtonStyle.primary, emoji="⏪", command=self.set_page, args=0, ctx=self.ctx)
+        self.backB = Button(label="", style=discord.ButtonStyle.success, emoji="◀️", command=self.to_page, args=-1, ctx=self.ctx)
         self.quitB = Button(label="", style=discord.ButtonStyle.danger, emoji="🔲", command=self.quit, ctx=self.ctx)
-        self.nextB = Button(label="", style=discord.ButtonStyle.secondary, emoji="▶️", command=self.to_page, args=1, ctx=self.ctx)
-        self.lastB = Button(label="", style=discord.ButtonStyle.secondary, emoji="⏩", command=self.set_last_page, ctx=self.ctx)
+        self.nextB = Button(label="", style=discord.ButtonStyle.success, emoji="▶️", command=self.to_page, args=1, ctx=self.ctx)
+        self.lastB = Button(label="", style=discord.ButtonStyle.primary, emoji="⏩", command=self.set_last_page, ctx=self.ctx)
 
         buttons = [self.homeB, self.backB, self.quitB, self.nextB, self.lastB]
         for button in buttons:
